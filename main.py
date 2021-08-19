@@ -13,8 +13,10 @@ app = Flask(__name__)
 @app.route("/")
 def main_():
     method = flask.request.args.get('method')
-    key = flask.request.args.get('key')
-    secret = flask.request.args.get('secret')
+    #key = flask.request.args.get('key')
+    #secret = flask.request.args.get('secret')
+    key = "18bb0fa633edb925cff40475f8e7355961757039c9c9920a"
+    secret = "e8b8aedbf8f06beefa13469e7789734866372c994c7a3ea6526d48ee3d769a6c"
     obj = ""
     global mainUrl
     mainUrl = "https://api.coindcx.com/exchange/ticker"
